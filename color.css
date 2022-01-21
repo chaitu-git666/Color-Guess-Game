@@ -1,0 +1,101 @@
+#navbar {
+  background: #ad35f2;
+  text-align: center;
+}
+#heading {
+  font-family: "Rock 3D", cursive;
+  font-size: 45px;
+  font-weight: bold;
+  color: #f1ff75;
+}
+#red {
+  color: red;
+}
+#green {
+  color: green;
+}
+#blue {
+  color: blue;
+}
+.leftButtonColor {
+  /* position: relative;
+  left: 10%; */
+  color: #ad35f2;
+  border-color: #ad35f2;
+}
+.rightButtonColor {
+  /* position: relative;
+  left: 65%; */
+  color: #ad35f2;
+  border-color: #ad35f2;
+}
+.navColor {
+  background-color: #ad35f2;
+}
+.buttonTextColor {
+  color: white;
+}
+.highScore {
+  color: orange;
+}
+.lifes {
+  color: red;
+}
+.score {
+  color: green;
+}
+#p2 {
+  padding-top: 70px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.leftPadding {
+  padding-left: 30px;
+}
+.square {
+  background: greenyellow;
+  width: 30%;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15%;
+  transition: background 1s;
+}
+#container {
+  margin: 20px auto;
+  max-width: 600px;
+}
+#color1 {
+  background-color: red;
+}
+#color2 {
+  background-color: green;
+}
+#color3 {
+  background-color: blue;
+}
+.buttonflex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+.imageClass {
+  display: none;
+  justify-content: center;
+}
+.click {
+  display: flex;
+}
+.backColor {
+  background-color: #ad35f2;
+  color: white;
+}
+#gameEnd {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+#image {
+  width: 20rem;
+}
