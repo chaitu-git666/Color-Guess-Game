@@ -245,7 +245,7 @@ function randomColor()
     //pick ble from 0-255
     var b = Math.floor(Math.random() * 256);
 
-    return "rgb(" + r + "," + " " + r + "," + " " + b + ")";
+    return "rgb(" + r + "," + " " + g + "," + " " + b + ")";
 }
 
 
