@@ -53,11 +53,12 @@
   padding-left: 30px;
 }
 .square {
-  background: greenyellow;
+  background: white;
   width: 30%;
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+  border: 1px solid black;
   border-radius: 15%;
   transition: background 1s;
 }

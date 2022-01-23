@@ -46,6 +46,7 @@ easyClicked.addEventListener("click",function(){
          if(colors[i])
          {
             squares[i].style.background=colors[i];
+            squares[i].style.visibility = "visible"
          }
          else
          {
@@ -86,6 +87,7 @@ hardClicked.addEventListener("click",function(){
     {
            squares[i].style.background=colors[i];
            squares[i].style.display = "block";
+           squares[i].style.visibility = "visible"
     }  
 });
 
@@ -117,6 +119,7 @@ newGameClicked.addEventListener("click",function(){
     for(var i=0;i<colors.length;i++)
     {
         squares[i].style.background=colors[i];
+        squares[i].style.visibility = "visible"
     }
 });
 
@@ -154,6 +157,10 @@ for(var i=0;i<colors.length;i++)
         var clickedColor =this.style.background;
         if(pickedColor===clickedColor)
         {
+            for(var i=0;i<colors.length;i++)
+            {
+                squares[i].style.visibility = "visible"
+            }
             score+=5;
             playerScore.textContent=score;
             changeColor(clickedColor);
@@ -170,6 +177,7 @@ for(var i=0;i<colors.length;i++)
                 for(var i=0;i<colors.length;i++)
                   {
                      squares[i].style.background=colors[i];
+                     squares[i].style.visibility = "visible"
                   }
                 
             }, 750);
@@ -178,7 +186,7 @@ for(var i=0;i<colors.length;i++)
         {
             playerLimit--;
             lifeIcons[playerLimit].style.visibility="hidden";
-            this.style.background="white";
+            this.style.visibility="hidden";
             if(playerLimit==0)
             {
                 if(score>=playerHighScoreIntl)
@@ -192,7 +200,7 @@ for(var i=0;i<colors.length;i++)
                 // playerScore.textContent=score;
                 for(var i=0;i<colors.length;i++)
                 {
-                   squares[i].style.background="white"
+                   squares[i].style.visibility="hidden"
                 }
                 gameEnd.style.visibility="visible";
                 progressBarColor();
